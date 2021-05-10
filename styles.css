@@ -24,20 +24,19 @@ body {
 
 .calculator-keys {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: minmax(120px, auto) repeat(0, 100px);
+    grid-gap: 2px;
+    grid-template-columns: repeat(4, 70px);
     background-color: white;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     border: 1px solid gray;
 }
 
 button {
     height: 75px;
-    width:70px;
     font-size: 19px;
     background-color: white;
-    border-radius: 25px;
+    border-radius: 15px;
     border: 1px solid gray;
 }
 
@@ -55,7 +54,6 @@ button:hover {
 }
 
 .equals {
-    display: grid;
     grid-column: span 2;
     background-color: lightgreen;
 }
@@ -74,6 +72,14 @@ button:hover {
     background-color: rgb(44, 65, 65);
     color: white;
     border-radius: 10px;
-    font-size: 40px;
     height: 75px
+}
+
+.current-operand {
+    font-size: 40px;
+}
+
+.previous-operand {
+    font-size: 30px;
+    color: rgb(224, 224, 224);
 }
